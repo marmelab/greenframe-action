@@ -1,9 +1,14 @@
 name: "GreenFrame CLI Actions"
-description: "Use GreenFrame CLI directly in your workflow"
+description: "Perform a GreenFrame analysis"
+author: "Marmelab"
 env:
   GREENFRAME_SECRET_TOKEN:
     description: "GreenFrame Secret Token"
     required: true
+inputs:
+  CONFIG_PATH:
+    description: "Path to .greenframe.yml"
+    default: .greenframe.yml
 runs:
   using: "composite"
   steps:
@@ -11,5 +16,5 @@ runs:
       shell: bash
     - run: node -v
       shell: bash
-    - run: greenframe analyze
+    - run: greenframe analyze -C ${{ inputs.CONFIG_PATH }}
       shell: bash
