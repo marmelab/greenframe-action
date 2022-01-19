@@ -12,6 +12,6 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all the git history
       - name: GreenFrame Analysis
-        uses: ./ # Uses an action in the root directory
+        uses: ./
         env:
           GREENFRAME_SECRET_TOKEN: ${{secrets.GREENFRAME_SECRET_TOKEN}}
