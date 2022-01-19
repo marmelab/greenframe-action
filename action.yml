@@ -1,6 +1,6 @@
 name: "GreenFrame CLI Actions"
 description: "Use GreenFrame CLI directly in your workflow"
-inputs:
+env:
   GREENFRAME_SECRET_TOKEN:
     description: "GreenFrame Secret Token"
     required: true
