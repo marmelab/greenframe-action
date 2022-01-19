@@ -13,7 +13,5 @@ jobs:
           fetch-depth: 0 # Fetch all the git history
       - name: GreenFrame Analysis
         uses: ./
-        with:
-          CONFIG_PATH: .greenframe.test.yml
         env:
           GREENFRAME_SECRET_TOKEN: ${{secrets.GREENFRAME_SECRET_TOKEN}}
