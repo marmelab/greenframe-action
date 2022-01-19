@@ -9,7 +9,7 @@ runs:
   steps:
     - run: curl https://assets.greenframe.io/install.sh | bash
       shell: bash
-    - run: export GREENFRAME_SECRET_TOKEN=${{ env.GREENFRAME_SECRET_TOKEN }}
+    - run: export GREENFRAME_SECRET_TOKEN=${{ inputs.GREENFRAME_SECRET_TOKEN }}
       shell: bash
     - run: node -v
       shell: bash

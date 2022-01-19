@@ -11,5 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - name: GreenFrame Step
         uses: ./ # Uses an action in the root directory
+        with:
+          GREENFRAME_SECRET_TOKEN: ${{secrets.GREENFRAME_SECRET_TOKEN}}
         env:
           GREENFRAME_SECRET_TOKEN: ${{secrets.GREENFRAME_SECRET_TOKEN}}
