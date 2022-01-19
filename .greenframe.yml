@@ -8,4 +8,4 @@ scenarios:
 baseURL: "https://greenframe.io"
 samples: 2
 distant: false
-projectName: "e2e"
+projectName: "github action"

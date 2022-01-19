@@ -13,5 +13,3 @@ runs:
       shell: bash
     - run: greenframe analyze
       shell: bash
-    # - run: ${{ github.action_path }}/goodbye.sh
-    #   shell: bash

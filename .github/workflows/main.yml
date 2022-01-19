@@ -1,15 +1,17 @@
 on: [push]
 
 jobs:
-  greenframe_test_workflow:
+  greenframe_action_workflow:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Run a GreenFrame CLI Action
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: GreenFrame Step
+        with:
+          fetch-depth: 0 # Fetch all the git history
+      - name: GreenFrame Analysis
         uses: ./ # Uses an action in the root directory
         env:
           GREENFRAME_SECRET_TOKEN: ${{secrets.GREENFRAME_SECRET_TOKEN}}
