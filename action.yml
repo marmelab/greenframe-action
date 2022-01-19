@@ -1,5 +1,6 @@
 name: "GreenFrame CLI Actions"
-description: "Use GreenFrame CLI directly in your workflow"
+description: "Perform a GreenFrame analysis"
+author: "Marmelab"
 env:
   GREENFRAME_SECRET_TOKEN:
     description: "GreenFrame Secret Token"
