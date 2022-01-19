@@ -35,7 +35,7 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all the git history to enable git comparison
       - name: GreenFrame Analysis
-        uses: actions/greenframe-action@v1
+        uses: marmelab/greenframe-action@1.0.0
         env:
           GREENFRAME_SECRET_TOKEN: ${{secrets.GREENFRAME_SECRET_TOKEN}}
 ```
