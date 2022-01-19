@@ -1,6 +1,9 @@
 name: "GreenFrame CLI Actions"
 description: "Perform a GreenFrame analysis"
 author: "Marmelab"
+branding:
+  icon: "activity"
+  color: "green"
 env:
   GREENFRAME_SECRET_TOKEN:
     description: "GreenFrame Secret Token"
